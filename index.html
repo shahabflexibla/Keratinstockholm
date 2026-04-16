@@ -4,145 +4,125 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Keratinbehandling & Lash Lift Stockholm | Keratin Sthlm</title>
-<meta name="description" content="Keratinbehandling och lash lift i Stockholm. Få silkeslent hår och naturligt lyfta fransar. Boka enkelt via Instagram.">
-
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=DM+Sans&display=swap" rel="stylesheet">
+<title>Keratinbehandling & Fransar Stockholm</title>
+<meta name="description" content="Keratinbehandling och lash lift i Stockholm. Boka enkelt via Instagram.">
 
 <style>
-:root{
-  --bg:#FAF6F1;
-  --accent:#C9897A;
-  --text:#2E1F17;
-}
-
-body{
+body {
   margin:0;
-  font-family:'DM Sans',sans-serif;
-  background:var(--bg);
-  color:var(--text);
+  font-family: Arial, sans-serif;
+  background:#f8f5f2;
 }
 
-.container{
-  max-width:1100px;
-  margin:auto;
-  padding:40px 20px;
-}
-
-h1,h2,h3{
-  font-family:'Cormorant Garamond',serif;
-  font-weight:300;
-}
-
-nav{
+nav {
   display:flex;
   justify-content:space-between;
   padding:20px;
-  position:sticky;
-  top:0;
   background:white;
 }
 
-.hero{
-  text-align:center;
-  padding:80px 20px;
-}
-
-.hero h1{
-  font-size:3rem;
-}
-
-.btn{
-  background:var(--accent);
-  color:white;
-  padding:12px 30px;
-  text-decoration:none;
-  display:inline-block;
-  margin-top:20px;
-}
-
-.services{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:20px;
-}
-
-.card{
-  background:white;
-  padding:30px;
-  text-align:center;
-}
-
-.booking{
-  text-align:center;
-}
-
-.booking a{
-  display:block;
-  margin:10px auto;
-  padding:20px;
-  max-width:300px;
-  background:white;
+nav a {
+  margin-left:20px;
   text-decoration:none;
   color:black;
-  border:1px solid #eee;
 }
 
-footer{
+.hero {
+  height:90vh;
+  background:url('https://images.unsplash.com/photo-1600948836101-f9ffda59d250') center/cover;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   text-align:center;
+  color:white;
+}
+
+.hero-box {
+  background:rgba(0,0,0,0.5);
   padding:40px;
 }
-</style>
 
+.btn {
+  padding:12px 25px;
+  background:#c9a27c;
+  color:white;
+  text-decoration:none;
+  margin:10px;
+  display:inline-block;
+}
+
+.section {
+  padding:60px 20px;
+  max-width:1000px;
+  margin:auto;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+}
+
+.card img {
+  width:100%;
+  border-radius:10px;
+}
+
+footer {
+  padding:40px;
+  text-align:center;
+}
+</style>
 </head>
 
 <body>
 
 <nav>
-  <div>Keratin <span style="color:var(--accent)">Sthlm</span></div>
+  <div>Keratin Sthlm</div>
   <div>
-    <a href="#tjanster">Tjänster</a>
+    <a href="#">Hem</a>
+    <a href="#keratin">Keratin</a>
+    <a href="#fransar">Fransar</a>
   </div>
 </nav>
 
 <section class="hero">
-  <h1>Keratinbehandling & Lash Lift i Stockholm</h1>
-  <p>Professionella behandlingar för glansigt hår och naturligt lyfta fransar.</p>
-</section>
+  <div class="hero-box">
+    <h1>Keratinbehandling & Fransar i Stockholm</h1>
+    <p>Glansigt hår och naturligt vackra fransar</p>
 
-<section id="tjanster" class="container">
-  <h2>Tjänster</h2>
+    <a class="btn" href="https://instagram.com/keratin.sthlm" target="_blank">
+      Boka Keratin
+    </a>
 
-  <div class="services">
-
-    <div class="card">
-      <h3>Keratinbehandling</h3>
-      <p>Få frizz-fritt, silkeslent hår med långvarigt resultat.</p>
-    </div>
-
-    <div class="card">
-      <h3>Lash Lift</h3>
-      <p>Lyft dina fransar naturligt utan mascara.</p>
-    </div>
-
+    <a class="btn" href="https://instagram.com/lashliftbycassie" target="_blank">
+      Boka Fransar
+    </a>
   </div>
 </section>
 
-<section class="container booking">
-  <h2>Boka via Instagram</h2>
+<section class="section">
+  <h2>Våra behandlingar</h2>
 
-  <a href="https://instagram.com/keratin.sthlm" target="_blank">
-    Keratin → @keratin.sthlm
-  </a>
+  <div class="grid">
+    <div class="card" id="keratin">
+      <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9">
+      <h3>Keratinbehandling</h3>
+      <p>Silkeslent och frizz-fritt hår som håller i flera månader.</p>
+      <a href="https://instagram.com/keratin.sthlm" target="_blank">Boka via Instagram</a>
+    </div>
 
-  <a href="https://instagram.com/lashliftbycassie" target="_blank">
-    Fransar → @lashliftbycassie
-  </a>
-
+    <div class="card" id="fransar">
+      <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30">
+      <h3>Lash Lift</h3>
+      <p>Naturligt lyfta fransar utan mascara.</p>
+      <a href="https://instagram.com/lashliftbycassie" target="_blank">Boka via Instagram</a>
+    </div>
+  </div>
 </section>
 
 <footer>
-  <p>Keratin Sthlm – Stockholm</p>
+  <p>© Keratin Sthlm - Stockholm</p>
 </footer>
 
 </body>
