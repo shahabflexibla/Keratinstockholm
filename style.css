@@ -1,24 +1,28 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  color: #222;
+  color: #1a1a1a;
+  background: #f9f7f4;
 }
 
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
+  margin: 0;
 }
 
 .container {
   max-width: 1100px;
   margin: auto;
-  padding: 20px;
+  padding: 60px 20px;
 }
 
+/* NAVBAR */
 header {
   position: fixed;
   width: 100%;
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.85);
   backdrop-filter: blur(10px);
+  z-index: 1000;
 }
 
 .nav {
@@ -27,19 +31,19 @@ header {
   align-items: center;
 }
 
+.logo {
+  font-family: 'Playfair Display';
+  font-size: 22px;
+}
+
 .logo span {
   color: #c89b5e;
 }
 
-nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #333;
-}
-
+/* HERO */
 .hero {
   height: 100vh;
-  background: url('https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80') center/cover;
+  background: url('https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,14 +52,29 @@ nav a {
 .overlay {
   text-align: center;
   color: white;
-  background: rgba(0,0,0,0.4);
-  padding: 40px;
+  background: rgba(0,0,0,0.35);
+  padding: 60px 30px;
+  max-width: 800px;
+  border-radius: 10px;
 }
 
+.overlay h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.overlay p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* BUTTONS */
 .btn {
-  padding: 12px 25px;
+  padding: 14px 30px;
   margin: 10px;
   display: inline-block;
+  border-radius: 6px;
+  text-decoration: none;
 }
 
 .primary {
@@ -68,23 +87,59 @@ nav a {
   color: white;
 }
 
+/* SERVICES */
+.services h2 {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 30px;
 }
 
 .card img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
+.card h3 {
+  margin-top: 15px;
+  font-size: 24px;
+}
+
+.card p {
+  color: #555;
+}
+
+/* EXPERIENCE */
 .experience {
   text-align: center;
-  padding: 80px 20px;
+  padding: 100px 20px;
 }
 
+.experience h2 {
+  font-size: 48px;
+  color: #c89b5e;
+}
+
+/* FOOTER */
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 40px;
+  background: #111;
+  color: white;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .overlay h1 {
+    font-size: 32px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
