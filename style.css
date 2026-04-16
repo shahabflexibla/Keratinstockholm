@@ -9,7 +9,7 @@ h1,h2,h3 {
   letter-spacing:1px;
 }
 
-/* HERO MED DIN LOGGA */
+/* HERO MED LOGGA */
 .hero {
   height:100vh;
   display:flex;
@@ -19,11 +19,11 @@ h1,h2,h3 {
 
   background:
     linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
-    url('logo.png');
+    url('keratin-stockholm-logo.png');
 
-  background-size:contain;
-  background-position:center;
-  background-repeat:no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .overlay {
@@ -51,6 +51,12 @@ h1,h2,h3 {
   font-weight:bold;
   display:inline-block;
   margin-top:25px;
+  transition:0.3s;
+}
+
+.btn:hover {
+  transform:scale(1.05);
+  box-shadow:0 10px 30px rgba(225,48,108,0.4);
 }
 
 /* CONTENT */
@@ -73,6 +79,7 @@ section {
   background:#1a1a1a;
   padding:25px;
   border-radius:15px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.5);
 }
 
 /* CTA */
@@ -84,9 +91,10 @@ section {
 /* REVIEWS */
 .reviews {
   text-align:center;
+  background:#111;
 }
 
-/* STICKY */
+/* STICKY INSTAGRAM BUTTON */
 .sticky {
   position:fixed;
   bottom:20px;
@@ -97,11 +105,17 @@ section {
   border-radius:50px;
   text-decoration:none;
   font-weight:bold;
+  box-shadow:0 5px 20px rgba(0,0,0,0.5);
+  z-index:999;
 }
 
 /* MOBILE */
 @media(max-width:768px){
   .grid {
     grid-template-columns:1fr;
+  }
+
+  .overlay h1 {
+    font-size:28px;
   }
 }
