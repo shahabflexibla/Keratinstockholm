@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #222;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(10px);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo span {
+  color: #c89b5e;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  padding: 40px;
+}
+
+.btn {
+  padding: 12px 25px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.primary {
+  background: #c89b5e;
+  color: white;
+}
+
+.secondary {
+  border: 1px solid white;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.experience {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
