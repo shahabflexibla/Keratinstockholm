@@ -2,77 +2,70 @@
 <html lang="sv">
 <head>
   <meta charset="UTF-8">
-  <title>Keratinbehandling Stockholm | Keratin Sthlm</title>
-
-  <meta name="description" content="Keratinbehandling i Stockholm – få glansigt, frizzfritt hår i flera månader. Boka via Instagram.">
+  <title>Keratin Stockholm</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin:0;
+      font-family:Arial;
+      background:#0d0d0d;
+      color:white;
+    }
+
+    .hero {
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      position:relative;
+    }
+
+    /* TEST BILD DIREKT (för att säkerställa att det funkar) */
+    .hero::before {
+      content:"";
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -50%);
+      width:300px;
+      height:300px;
+
+      background:url('https://via.placeholder.com/300') no-repeat center;
+      background-size:contain;
+      opacity:0.4;
+    }
+
+    .overlay {
+      position:relative;
+      z-index:2;
+    }
+
+    .btn {
+      background:#E1306C;
+      padding:15px 25px;
+      border-radius:10px;
+      text-decoration:none;
+      color:white;
+      display:inline-block;
+      margin-top:20px;
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- HERO -->
 <section class="hero">
   <div class="overlay">
-    <h1>Keratinbehandling i Stockholm</h1>
-    <p>Lyxigt, frizzfritt och glansigt hår</p>
+    <h1>Keratin Stockholm</h1>
+    <p>Test sida</p>
 
     <a href="https://instagram.com/keratin.sthlm" target="_blank" class="btn">
-      Boka via Instagram
+      Instagram
     </a>
   </div>
 </section>
-
-<!-- INFO -->
-<section class="info">
-  <div class="container">
-    <h2>Professionell keratinbehandling</h2>
-
-    <div class="grid">
-      <div class="card">
-        <h3>Fördelar</h3>
-        <ul>
-          <li>Tar bort friss</li>
-          <li>Spegelglans</li>
-          <li>Mindre styling</li>
-          <li>Håller 3–6 månader</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Resultat</h3>
-        <p>
-          Ett mjukt, starkt och lyxigt hår som ser nybehandlat ut varje dag.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="cta">
-  <h2>Boka din behandling</h2>
-  <p>Skicka DM på Instagram</p>
-
-  <a href="https://instagram.com/keratin.sthlm" target="_blank" class="btn">
-    Boka nu
-  </a>
-</section>
-
-<!-- REVIEWS -->
-<section class="reviews">
-  <h2>Vad kunder säger</h2>
-
-  <p>"Helt sjukt resultat!"</p>
-  <p>"Mitt hår är som nytt"</p>
-  <p>"Rekommenderar starkt"</p>
-</section>
-
-<!-- STICKY -->
-<a href="https://instagram.com/keratin.sthlm" target="_blank" class="sticky">
-  📩 Boka
-</a>
 
 </body>
 </html>
